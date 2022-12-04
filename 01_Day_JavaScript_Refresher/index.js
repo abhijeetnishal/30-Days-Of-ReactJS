@@ -15,3 +15,14 @@ const secondList = [4, 5, 6]
 const thirdList = firstList.concat(secondList)
 
 console.log(thirdList) // [1, 2, 3, 4, 5, 6]
+
+const number = [1, 2, 3, 4, 5]
+console.log(number.length) // -> 5 is the size of the array
+
+// Getting index of an element in an array
+// indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.
+
+const numbers = [1, 2, 3, 4, 5]
+
+console.log(numbers.indexOf(5)) // -> 4
+
