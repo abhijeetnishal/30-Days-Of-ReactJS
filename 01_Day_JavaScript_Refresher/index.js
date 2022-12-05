@@ -41,3 +41,9 @@ if (index != -1) {
 }
 // This fruit does exist in the array
 
+// includes:To check if an item exist in an array. If it exist it returns the true else it returns false.
+
+const numb = [1, 2, 3, 4, 5]
+
+console.log(numb.includes(5)) // true
+console.log(numb.includes(0)) // false
