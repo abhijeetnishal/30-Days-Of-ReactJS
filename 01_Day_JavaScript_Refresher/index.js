@@ -26,3 +26,18 @@ const numbers = [1, 2, 3, 4, 5]
 
 console.log(numbers.indexOf(5)) // -> 4
 
+//Check an element if it exist in an array.
+
+// Check items in a list
+// let us check if a banana exist in the array
+
+const fruits = ['banana', 'orange', 'mango', 'lemon']
+let index = fruits.indexOf('banana') // 0
+
+if (index != -1) {
+  console.log('This fruit does exist in the array')
+} else {
+  console.log('This fruit does not exist in the array')
+}
+// This fruit does exist in the array
+
