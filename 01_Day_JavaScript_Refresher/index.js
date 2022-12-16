@@ -92,3 +92,73 @@ console.log(numbers.slice(0)) // -> it copies all  item
 console.log(numbers.slice(0, numbers.length)) // it copies all  item
 console.log(numbers.slice(1, 4)) // -> [2,3,4] // it doesn't include the ending position
 
+// Splice method in array
+// Splice: It takes three parameters:Starting position, number of times to be removed and number of items to be added.
+
+console.log(numbers.splice()) // -> remove all items
+console.log(numbers.splice(0, 1)) // remove the first item
+console.log(numbers.splice(3, 3, 7, 8, 9)) // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items
+
+// Adding item to an array using push
+// Push: adding item in the end. To add item to the end of an existing array we use the push method.
+
+// syntax
+// const arr = ['item1', 'item2', 'item3']
+arr.push('new item')
+console.log(arr)
+// ['item1', 'item2','item3','new item']
+
+// Removing the end element using pop
+// pop: Removing item in the end.
+
+// const numbers = [1, 2, 3, 4, 5]
+numbers.pop() // -> remove one item from the end
+console.log(numbers) // -> [1,2,3,4]
+
+// Removing an element from the beginning
+// shift: Removing one array element in the beginning of the array.
+
+// const numbers = [1, 2, 3, 4, 5]
+numbers.shift() // -> remove one item from the beginning
+console.log(numbers) // -> [2,3,4,5]
+
+// Add an element from the beginning
+// unshift: Adding array element in the beginning of the array.
+// const numbers = [1, 2, 3, 4, 5]
+numbers.unshift(0) // -> add one item from the beginning
+console.log(numbers) // -> [0,1,2,3,4,5]
+
+// Reversing array order
+// reverse: reverse the order of an array.
+
+// const numbers = [1, 2, 3, 4, 5]
+numbers.reverse() // -> reverse array order
+console.log(numbers) // [5, 4, 3, 2, 1]
+
+// Sorting elements in array
+// sort: arrange array elements in ascending order. Sort takes a call back function, we will see how we use sort with a call back function in the coming sections.
+
+webTechs.sort()
+console.log(webTechs) // ["CSS", "HTML", "JavaScript", "MongoDB", "Node", "React", "Redux"]
+
+
+// Array of arrays
+// Array can store different data types including an array itself. Let us create an array of arrays
+
+const firstNums = [1, 2, 3]
+const secondNums = [1, 4, 9]
+
+const arrayOfArray = [
+  [1, 2, 3],
+  [1, 2, 3],
+]
+console.log(arrayOfArray[0]) // [1, 2, 3]
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node', 'Express', 'MongoDB']
+const fullStack = [frontEnd, backEnd]
+console.log(fullStack) // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
+console.log(fullStack.length) // 2
+console.log(fullStack[0]) // ["HTML", "CSS", "JS", "React", "Redux"]
+
+
