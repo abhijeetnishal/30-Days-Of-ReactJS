@@ -47,3 +47,48 @@ const numb = [1, 2, 3, 4, 5]
 
 console.log(numb.includes(5)) // true
 console.log(numb.includes(0)) // false
+
+//Getting last index of an element in array
+//lastIndexOf: It gives the position of the last item in the array. If it exist, it returns the index else it returns -1.
+const ar = [1, 2, 3, 4, 5, 3, 1, 2]
+
+console.log(ar.lastIndexOf(2)) // 7
+
+// Checking array
+// Array.isArray:To check if the data type is an array
+
+// const numbers = [1, 2, 3, 4, 5]
+ console.log(Array.isArray(numbers)) // true
+
+//  Converting array to string
+// toString:Converts array to string
+
+// const numbers = [1, 2, 3, 4, 5]
+console.log(numbers.toString()) // 1,2,3,4,5
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+console.log(names.toString()) // Asabeneh,Mathias,Elias,Brook
+
+//Joining array elements
+//join: It is used to join the elements of the array, the argument we passed in the join method will be joined in the 
+//array and return as a string. By default, it joins with a comma, but we can pass different string parameter which can be joined between the items.
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB',
+] // List of web technologies
+
+console.log(webTechs.join(' # ')) // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
+
+// Slice array elements
+// Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
+
+console.log(numbers.slice()) // -> it copies all  item
+console.log(numbers.slice(0)) // -> it copies all  item
+console.log(numbers.slice(0, numbers.length)) // it copies all  item
+console.log(numbers.slice(1, 4)) // -> [2,3,4] // it doesn't include the ending position
+
