@@ -160,5 +160,3 @@ const fullStack = [frontEnd, backEnd]
 console.log(fullStack) // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
 console.log(fullStack.length) // 2
 console.log(fullStack[0]) // ["HTML", "CSS", "JS", "React", "Redux"]
-
-
