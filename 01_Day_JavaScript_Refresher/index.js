@@ -160,3 +160,24 @@ const fullStack = [frontEnd, backEnd]
 console.log(fullStack) // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
 console.log(fullStack.length) // 2
 console.log(fullStack[0]) // ["HTML", "CSS", "JS", "React", "Redux"]
+
+
+//if 
+//else if
+//else 
+//same as cpp
+
+
+// switch(caseVal){
+//   case 1: //code
+//   break;
+//   ...
+// }
+//same as cpp
+
+ 
+//Ternary Operators - It is a short way to write if else statement.
+let isRaining = true
+isRaining
+  ? console.log('You need a rain coat.')
+  : console.log('No need for a rain coat.')
