@@ -83,3 +83,26 @@ console.log(itCompanies.slice(itCompanies.length-3,));
 console.log(itCompanies.splice(0,1));
 
 //Q21-23 same as 20
+
+
+
+
+
+//Q1.
+// let age = prompt('enter age');
+// if(age>=18)
+//     console.log('old')
+// else
+//     console.log('child')
+
+//level 2 switch ques.
+let score=93
+switch(true){
+    case score>=80 && score<=100:
+        console.log('A');
+        break;
+    case score>=70 && score<=89:
+        console.log('B');
+        break;
+}
+
