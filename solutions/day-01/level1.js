@@ -106,3 +106,78 @@ switch(true){
         break;
 }
 
+
+
+
+
+
+//level-1 objects:
+//Q1.
+dog = {}
+//Q2.
+console.log(dog);
+
+//Q3.
+dog = {
+    'name':'lebron',
+    'legs':'4',
+    'color':'golden',
+    'age':'3',
+    bark: function(){
+        return 'woof woof';
+    }
+}
+console.log(dog);
+
+//Q4. 
+console.log(dog.name);
+console.log(dog.bark());
+
+//Q5. add new property to object
+let newProp = {
+    'breed':'retriever',
+    getDogInfo : function(){
+        
+    }
+}
+
+Object.assign(dog, newProp);
+console.log(dog);
+
+
+//level1 functions
+function fullname(firstname, lastname){
+    return firstname+lastname;
+}
+console.log(fullname('abhi','jeet'));
+
+//destructuring exercise
+const person = {
+    firstName: "Asabeneh",
+    lastName: "Yetayeh",
+    age: 250,
+    country: "Finland",
+    job: "Instructor and Developer",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Node",
+      "MongoDB",
+      "Python",
+      "D3.js",
+    ],
+    languages: ["Amharic", "English", "Suomi(Finnish)"],
+};
+
+function getPersonInfo(person){
+    const [firstName, lastName, age, country, job, skills, languages]= person;
+}
+
+getPersonInfo(person);
+
+
+
+
