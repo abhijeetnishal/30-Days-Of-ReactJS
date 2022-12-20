@@ -176,7 +176,9 @@ function getPersonInfo(person){
     const [firstName, lastName, age, country, job, skills, languages]= person;
 }
 
-getPersonInfo(person);
+getPersonInfo(person.firstName);
+
+
 
 
 
