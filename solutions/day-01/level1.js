@@ -181,5 +181,3 @@ getPersonInfo(person.firstName);
 
 
 
-
-
