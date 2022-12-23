@@ -183,3 +183,54 @@ isRaining
   : console.log('No need for a rain coat.')
 
 
+//loops: to carry out repetitive tasks
+//1. for
+let sum = 0
+for (let i = 0; i < 101; i += 2) {
+  sum += i
+}
+
+//2. while
+let cnt = prompt('Enter a positive number: ')
+while (cnt > 0) {
+  console.log(cnt)
+  cnt--
+}
+
+//3. do while
+let count = 11
+do {
+  console.log(count)
+  count++
+} while (count < 11)
+
+//4. for of
+// If we are not interested in the index of the array a for of loop is preferable to regular for loop or forEach loop.
+const numbs = [1, 2, 3, 4, 5]
+for (const number of numb) {
+  console.log(number)
+}
+
+//5. forEach
+const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+countries.forEach((country, i, arr) => {
+  console.log(i, country.toUpperCase())
+})
+
+//6. for in
+//The for in loop can be used with object literals to get the keys of the object.
+const user = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  skills: ['HTML', 'CSS', 'JS', 'React', 'Node', 'Python', 'D3.js'],
+}
+
+for (const key in user) {
+  console.log(key, user[key])
+}
+
+//break, continue same as cpp
+
+
