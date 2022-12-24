@@ -234,3 +234,61 @@ for (const key in user) {
 //break, continue same as cpp
 
 
+//6. Scope
+//To declare a variable we use the key word _var_, _let_ and _const_. A variable can declared at different scope.
+
+//Window Scope
+a = "JavaScript"; // is a window scope this found anywhere
+b = 10; // this is a window scope variable
+function letsLearnScope() {
+  console.log(a, b);
+  if (true) {
+    console.log(a, b);
+  }
+}
+console.log(a, b); // accessible
+
+
+//A globally declared variable can be accessed every where in the same file.
+let a = "JavaScript"; // is a global scope it will be found anywhere in this file
+let b = 10; // is a global scope it will be found anywhere in this file
+function letsLearnScope() {
+  console.log(a, b); // JavaScript 10, accessible
+  if (true) {
+    let a = "Python";
+    let b = 100;
+    console.log(a, b); // Python 100
+  }
+  console.log(a, b);
+}
+letsLearnScope();
+console.log(a, b); // JavaScript 10, accessible
+
+
+//Local scope
+//A variable declared as local can be accessed only in certain block code.
+let A = "JavaScript"; // is a global scope it will be found anywhere in this file
+let B = 10; // is a global scope it will be found anywhere in this file
+function letsLearnScope() {
+  console.log(A, B); // JavaScript 10, accessible
+  let c = 30;
+  if (true) {
+    // we can access from the function and outside the function but
+    // variables declared inside the if will not be accessed outside the if block
+    let A = "Python";
+    let B = 20;
+    let d = 40;
+    console.log(A, B, c); // Python 20 30
+  }
+  // we can not access c because c's scope is only the if block
+  console.log(A, B); // JavaScript 10
+}
+letsLearnScope();
+console.log(a, b); // JavaScript 10, accessible
+
+
+//A variable declared with _var_ only scoped to function but variable declared with _let_ or _const_ is block scope(function block, if block, loop etc).
+
+
+
+
