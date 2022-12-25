@@ -290,5 +290,54 @@ console.log(a, b); // JavaScript 10, accessible
 //A variable declared with _var_ only scoped to function but variable declared with _let_ or _const_ is block scope(function block, if block, loop etc).
 
 
+//object: objects do have properties and properties have values, so an object is a key value pair.
+//Creating an empty object
+//const person = {};
+
+const person = {
+  firstName: "Asabeneh",
+  lastName: "Yetayeh",
+  age: 250,
+  country: "Finland",
+  city: "Helsinki",
+  skills: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node",
+    "MongoDB",
+    "Python",
+    "D3.js",
+  ],
+  getFullName: function () {
+    return `${this.firstName}${this.lastName}`;
+  },
+  "phone number": "+3584545454545",
+};
+// accessing values using .
+console.log(person.firstName);
+// value can be accessed using square bracket and key name
+console.log(person["firstName"]);
+
+//Object methods: Object.assign, Object.keys, Object.values, Object.entries
+//hasOwnProperty
+const copyPerson = Object.assign({}, person);
+console.log(copyPerson);
+
+//Getting object values using Object.values()
+const values = Object.values(copyPerson);
+
+//Getting object keys and values using Object.entries()
+const entries = Object.entries(copyPerson);
+console.log(entries);
+
+//_hasOwnProperty_: To check if a specific key or property exist in an object
+console.log(copyPerson.hasOwnProperty("name"));
+
+
+
+//Functions
+
 
 
