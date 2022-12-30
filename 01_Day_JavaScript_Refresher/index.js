@@ -338,6 +338,101 @@ console.log(copyPerson.hasOwnProperty("name"));
 
 
 //Functions
+//A function is a reusable block of code or programming statements designed to perform a certain task.
+function sumTwoNumbers(numOne, numTwo) {
+  let sum = numOne + numTwo;
+  console.log(sum);
+}
+sumTwoNumbers(10, 20); // calling functions
+
+//Unlimited number of parameters in arrow function
+//Arrow function does not have the function scoped arguments object.
+//To implement a function which takes unlimited number of arguments in an arrow function we use spread operator followed by any parameter name.
+const sumAllNums = (...args) => {
+  let sum = 0
+  for (const element of args) {
+    sum += element
+  }
+  return sum
+}
+
+console.log(sumAllNums(1, 2, 3, 4)) // 10
+console.log(sumAllNums(10, 20, 13, 40, 10))  // 93
+console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
+
+
+
+//Anonymous Function
+
+//Anonymous function or without name
+
+const anonymousFun = function () {
+  console.log(
+    "I am an anonymous function and my value is stored in anonymousFun"
+  );
+};
+
+//Expression Function
+
+//Expression functions are anonymous functions. After we create a function without a name and we assign it to a variable. To return a value from the function we should call the variable. Look at the example below.
+
+// Function expression
+const square = function (n) {
+  return n * n;
+};
+
+console.log(square(2)); // -> 4
+
+
+//self invoking function
+//Self invoking functions are anonymous functions which do not need to be called to return a value.
+
+(function (n) {
+  console.log(n * n);
+})(2); // 4, but instead of just printing if we want to return and store the data, we do as shown below
+
+
+//Arrow Function
+//Arrow function is an alternative to write a function, however function declaration and arrow function have some minor differences.
+const changeToUpperCase = (arr) => {
+  const newArr = [];
+  for (const element of arr) {
+    newArr.push(element.toUpperCase());
+  }
+  return newArr;
+};
+
+
+//Function with default parameters
+//Sometimes we pass default values to parameters, when we invoke the function if we do not pass an argument the default value will be used.
+function calculateAge(birthYear, currentYear = 2019) {
+  let age = currentYear - birthYear;
+  return age;
+}
+console.log("Age: ", calculateAge(1819));
+
+
+//Higher Order Function
+//Higher order functions are functions which take other function as a parameter or return a function as a value. 
+//The function passed as a parameter is called callback.
+
+//Callback
+//A callback is a function which can be passed as parameter to other function.
+
+// Higher order function returning an other function
+const higherOrder = n => {
+  const doSomething = m => {
+    const doWhatEver = t => {
+      return 2 * n + 3 * m + t
+    }
+    return doWhatEver
+  }
+  return doSomething
+}
+console.log(higherOrder(2)(3)(10))
+
+
+
 
 
 
